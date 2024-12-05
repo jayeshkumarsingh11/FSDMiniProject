@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Jayesh Kumar Singh - Portfolio</title>
+        <link rel="stylesheet" href="single page website..css">
+        <script src="single page website.js"></script>
+    </head>
+    <body>
+        <!--Navigation Bar-->
+        <nav>
+            <div id="home">
+                <div class="profile_name">
+                    <h3>Jayesh Kumar Singh</h3>
+                    <div class="contat_info" >
+                        <img src="https://img.icons8.com/?size=100&id=124379&format=png&color=000000"heigth="15px"  width="20px"/>
+                        Jayeshkumarsingh11@gmail.com
+                </div>
+                    <div style="clear:both;"></div>
+                    <div class="contact_info">
+                        <img src="https://img.icons8.com/?size=100&id=53439&format=png&color=000000"/>
+                        +916388664885
+
+                    </div>
+                    </div>
+                    <div class="topdiv">
+                        <a class="topmenu" href="#about-me">About Me</a>
+                        <a class="topmenu" href="#skills">Skills</a>
+                        <!-- <a class="topmenu" href="#projects">Projects</a> -->
+                        <a class="topmenu" href="#recommendations">Recommendtions</a>
+                    </div>
+            </div>
+        </nav>
+
+        <!--About Me-->
+        <section id="about-me" class="container">
+            <div class="image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS90zxQvZtHt2aCE1MkE0iI9rafXgB0M8JjDg&s" height="250px" width="250px"/>
+            </div>
+
+            <div>
+                <h1> 
+                    Hi,I'm Jayesh Kumar Singh!<img src="https://img.icons8.com/?size=100&id=7P8WlM6SUO7t&format=png&color=000000" width="50px"/>
+                </h1>
+                <p>
+                    I am currently a B.Tech student pursuing my degree from ABES Engineering College Ghaziabad.<br/>
+                    Currently I am learning Front-end development from edx and trying to improve my skills.<br/>
+                    I want to do Full-stack development and study more about data science.<br/>
+                </p>
+            </div>
+        </section>
+        <!--Skills-->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div style="clear:both;"></div>
+
+            <div class="all_skills">
+                <div class="skills">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" width="100px"/>
+                    <h6>HTML</h6>
+                    <p>Learning</p>
+                </div>
+                <div class="skills">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" width="100px"/>
+                    <h6>CSS</h6>
+                    <p>Learning</p>
+                </div>
+                <div class="skills">
+                    <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png" width="100px"/>
+                    <h6>JavaScript</h6>
+                    <p>Learning</p>
+                </div>
+                <div class="skills">
+                    <img src="https://i0.wp.com/junilearning.com/wp-content/uploads/2020/06/python-programming-language.webp?fit=1920%2C1920&ssl=1" width="100px"/>
+                    <h6>Python</h6>
+                    <p>3 year</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Recommendations-->
+        <section id="recommendations">
+            <h2>Recommendtions</h2>
+            <div style="clear:both;"></div>
+            <div class="all_recommendations" id="all_recommendations">
+                <div >
+                    <span>&#8220;</span>
+                    Jayesh is a very quick learner and quickly grasps key concepts of Web development. 
+                    He got a great attitude & He is an excellent team player. 
+                    He has a curious mind and asks the right question. 
+                    He takes initiative within a team and have the potentials to lead the team.
+                    <span>&#8221;</span>
+                </div>
+            </div>
+            <div class="all_recommendations" id="all_recommendations">
+                <div class="recommendations">
+                    <span>&#8220;</span>
+                    Working with Jayesh has been an awesome experience. 
+                    He is highly knowledgable and always goes the extra step to make sure everything is right. 
+                    For any future projects that need his expertise I would definitely want to work with him again.
+                    <span>&#8221;</span>
+                </div>
+            </div>
+        </section>
+
+        <!--Recommendation Form -->
+        <section id="contact">
+            <div class="flex_center">
+                <fieldset>
+                    <legend class="introduction">Leave a Recommendation</legend>
+                    <input type="text" placeholder="Name (optional) "><br/>
+                    <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+                    <div class="flex_center" onclick="showPopup(true)">
+                        <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+
+        <div class="iconbutton">
+            <a href="#home">
+                <img src="https://img.icons8.com/?size=100&id=1iF9PyJ2Thzo&format=png&color=000000" width="30px"/>
+            </a>
+        </div>
+        <div class="popup" id="popup" class="flex_center">
+            <img src="https://img.icons8.com/?size=100&id=11849&format=png&color=000000" width="100px"/>
+            <h3>Thank You for recommendation</h3>
+            <button onclick="showPopup(false)">Ok</button>
+        </div>
+    </body>
+</html>
